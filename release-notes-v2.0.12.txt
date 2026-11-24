@@ -1,0 +1,64 @@
+Sunshine Bay Cameras — Release history
+
+v2.0.12
+- Release notes and SBC Surveillance Team now open in User Guide-style dialogs within the dashboard. Release notes also open inline in the Chrome toolbar popup.
+
+v2.0.11
+- The SBC Surveillance Team link in the bottom-right corner of the dashboard opens a window with thumbnails of Antonio, Chris, and Valerie.
+
+v2.0.10
+- Click the newest version number in the dashboard or extension popup to open the full documented release history in a separate window. No GitHub sign-in is required.
+
+v2.0.9
+- Dashboard ZIP downloads now start from the extension over HTTPS, including when the recorder page uses HTTP.
+
+v2.0.8
+- Moved User Guide to the far right of the dashboard header and aligned the version indicator directly beneath its right edge.
+
+v2.0.7
+- The dashboard shows the installed version beneath User Guide, with a green Up to date indicator or a Download ZIP link when a newer release is available.
+
+v2.0.6
+- The popup shows a green dot and Up to date when the installed version matches the latest published version.
+
+v2.0.5
+- The extension popup shows the installed version and displays Update available when a newer release is published.
+- The popup links directly to the public installable ZIP. The development repository remains private.
+
+v2.0.4
+- Fixed group playback WebM exports that could miss the start of a clip. Capture now starts when the selected camera reaches the requested interval, even while other cameras are still connecting.
+- Fixed the 30-second skip buttons in single-camera playback. Both directions now seek to the exact target time, including across minute boundaries.
+
+Version 2.0.3: Updated Technical Details to document snapshot capture, browser-based WebM clip export, shared recording-history cache, and export limitations. No functional changes.
+
+Version 1.1.36: Cache oldest observed recording per camera for 24 hours in localStorage. Show cached results immediately; refresh near the previously found boundary without repeating the full historical scan. First lookup remains a full scan; date selection unrestricted.
+
+Version 1.1.35: Anchor retention scanning to validated current Miami calendar date and guard against epoch/1969 dates.
+
+Version 1.1.34: On the first rejected retention day, display and log the exact searched date and DVR status, then stop. Date selection stays unrestricted.
+
+Version 1.1.33: Retention searches use the same serialized single-day DVR request as the working activity timeline, and begin after its initial load.
+
+Version 1.1.6: Unified camera viewer with Live / Playback toggle; tile playback shortcut opens directly in Playback.
+
+Version 1.1.5: Fix repeated Next/Previous Motion navigation by tracking selected event across player reconnections and seeking to exact seconds.
+
+Version 1.1.4: Use pointer cursor on recording activity timeline instead of crosshair.
+
+Version 1.1.3: Playback date picker bounds update from camera-specific oldest recorded day, using authenticated DVR recording search. Initial provisional lower bound August 6, 2026.
+
+Version 1.1.2: Experimental DVR recording playback in enlarged camera popup; Miami date/time selection, pause/resume, speed, skip and day scrubber.
+
+Version 1.0.9: User Guide button in dashboard header with an in-app guide to all features.
+
+Version 1.0.8: Enlarged camera popup shows the entire uncropped frame; normal tiles retain cropping.
+
+Version 1.0.7: Descriptive default names for all 11 cameras. Existing custom names are preserved; uncustomized names display descriptive defaults.
+
+Version 1.0.6: Manage Cameras now has Restore Default Groups. Confirmation required; resets only groups/assignments and preserves camera names, All Cameras ordering and last selected camera.
+
+Version 1.0.5: Updated default groups for new users: Garage, Entries, Upper Floors, Trash/Camera Rooms. Existing saved group configurations are preserved.
+
+Version 1.0.4: Remembers last selected group, All Cameras mode, and individual camera across browser restarts.
+
+Version 1.0.2: browser tab title SBC Cameras; All Cameras single-feed view with persistent up/down reorder controls.
